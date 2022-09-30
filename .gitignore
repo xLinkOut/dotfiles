@@ -1,0 +1,19 @@
+# Global .gitignore
+
+# macOS
+.DS_Store
+
+# VS Code
+.vscode/
+
+# Python
+venv/
+*.pyc
+__pycache__/
+
+# Database
+*.db
+*.sqlite
+
+# Log
+*.log
