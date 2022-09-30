@@ -5,3 +5,5 @@
 [user]
 	name = John Doe
 	email = johndoe@example.com
+[init]
+	defaultBranch = main  # Default name for first branch in new repo
