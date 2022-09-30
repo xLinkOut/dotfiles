@@ -1,0 +1,11 @@
+aaron-bond.better-comments
+artdiniz.quitcontrol-vscode
+ms-python.python
+ms-python.vscode-pylance
+PKief.material-icon-theme
+sourcery.sourcery
+streetsidesoftware.code-spell-checker
+streetsidesoftware.code-spell-checker-italian
+tomoki1207.pdf
+WakaTime.vscode-wakatime
+zhuangtongfa.material-theme
