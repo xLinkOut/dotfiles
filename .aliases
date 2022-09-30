@@ -1,20 +1,15 @@
 #!/usr/bin/env bash
 
-# NAVIGATION
+# BASH
 alias ..="cd .."
-alias ...="cd ../.."
-alias ....="cd ../../.."
-alias .....="cd ../../../.."
 alias lash="ls -lash"
 alias l="ls"
+alias c="clear"
 
 # COMMON DIRECTORIES
 alias dl="cd ~/Downloads"
 alias dt="cd ~/Desktop"
 alias home="cd ~"
-
-# BASH TRICKS
-alias c="clear"
 
 # GIT
 alias g="git"
