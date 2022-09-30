@@ -2,3 +2,6 @@
 [core]
 	editor = code --wait  # Use VS Code as default editor
 	excludesfile = ~/.gitignore  # Use a global .gitignore
+[user]
+	name = John Doe
+	email = johndoe@example.com
