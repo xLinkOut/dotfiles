@@ -7,3 +7,5 @@
 	email = johndoe@example.com
 [init]
 	defaultBranch = main  # Default name for first branch in new repo
+[push]
+	autoSetupRemote = true # Auto-create remote branch if not exists
