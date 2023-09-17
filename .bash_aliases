@@ -22,6 +22,7 @@ alias gm="git checkout master"
 alias gl="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
 
 # PYTHON
+alias create-venv="python3 -m venv venv"
 alias activate="source venv/bin/activate"
 
 # MISC
