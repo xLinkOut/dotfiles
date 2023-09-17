@@ -13,12 +13,12 @@ alias home="cd ~"
 
 # GIT
 alias g="git"
-alias ga="git add"
 alias gs="git status"
 alias gd="git diff"
 alias gb="git branch"
 alias gc="git commit"
-alias gm="git checkout master"
+alias gcm="git checkout master"
+alias gsync="git pull && git fetch -p"
 alias gl="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
 
 # PYTHON
