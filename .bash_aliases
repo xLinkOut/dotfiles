@@ -2,17 +2,14 @@
 
 # BASH
 alias ..="cd .."
-alias lash="ls -lash"
-alias l="ls"
 alias c="clear"
+alias ll="ls -lash"
 
 # COMMON DIRECTORIES
 alias dl="cd ~/Downloads"
 alias dt="cd ~/Desktop"
-alias home="cd ~"
 
 # GIT
-alias g="git"
 alias gs="git status"
 alias gd="git diff"
 alias gb="git branch"
