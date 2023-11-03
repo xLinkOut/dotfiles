@@ -26,3 +26,4 @@ alias activate="source venv/bin/activate"
 alias nmap-disc="nmap -sP 192.168.1.1/24"
 alias arp-disc="ifconfig | grep broadcast | arp -a | grep -v '^?'"
 alias download-website="wget --recursive --no-clobber --page-requisites --html-extension --convert-links --restrict-file-names=windows"
+alias get-temperature="/usr/bin/vcgencmd measure_temp | awk -F \"[=']\" '{print($2)}'" # Raspberry Pi only
