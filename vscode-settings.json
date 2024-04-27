@@ -1,43 +1,26 @@
 {
-    "workbench.startupEditor": "newUntitledFile",
-    "workbench.colorTheme": "One Dark Pro Darker",
-    "workbench.iconTheme": "material-icon-theme",
-    
-    "editor.fontFamily": "Fira Code",
-    "editor.fontWeight": "400",
-    "editor.fontLigatures": true,
-    "editor.cursorStyle": "underline",
-    "editor.cursorBlinking": "smooth",
-    "editor.minimap.enabled": false,
-    "editor.smoothScrolling": true,
-    "editor.cursorSmoothCaretAnimation": true,
-    "editor.foldingStrategy": "indentation",
-    "editor.glyphMargin": false,
-    "editor.inlineSuggest.enabled": true,
-    "editor.suggestSelection": "first",
-    "editor.rulers": [80, 90, 100],
- 
-    "terminal.integrated.scrollback": 100000,
-    "terminal.integrated.cursorBlinking": true,
-    "terminal.integrated.cursorStyle": "underline",
-    
-    "markdown.preview.scrollEditorWithPreview": true,
-    "markdown.preview.scrollPreviewWithEditor": true,
- 
-    "workbench.sideBar.location": "right",
     "breadcrumbs.enabled": true,
-    "telemetry.telemetryLevel": "off",
-    "scm.autoReveal": false,
-    "workbench.list.smoothScrolling": true,
+    
     "diffEditor.ignoreTrimWhitespace": false,
- 
+    
+    "editor.accessibilitySupport": "off",
+    "editor.cursorBlinking": "smooth",
+    "editor.cursorSmoothCaretAnimation": "on",
+    "editor.cursorStyle": "underline",
+    "editor.foldingStrategy": "indentation",
+    "editor.fontFamily": "Fira Code",
+    "editor.fontLigatures": true,
+    "editor.fontWeight": "400",
+    "editor.inlineSuggest.enabled": true,
+    "editor.minimap.enabled": false,
+    "editor.rulers": [80, 90, 100],
+    "editor.smoothScrolling": true,
+    "editor.suggestSelection": "first",
+    
     "explorer.autoReveal": false,
     "explorer.confirmDelete": false,
     "explorer.confirmDragAndDrop": false,
- 
-    "window.restoreWindows": "one",
-    "window.commandCenter": true,
- 
+
     "files.exclude": {
         "**/__pycache__": true,
         "**/.classpath": true,
@@ -47,6 +30,37 @@
         "**/.vscode/": true,
         "**/*.pyc": true,
         "**/venv/": true
-    }
-     
+    },
+    
+    "markdown.preview.scrollEditorWithPreview": true,
+    "markdown.preview.scrollPreviewWithEditor": true,
+    
+    "python.analysis.addImport.heuristics": true,
+    "python.analysis.autoFormatStrings": true,
+    "python.analysis.autoImportCompletions": true,
+    "python.analysis.completeFunctionParens": true,
+    "python.analysis.diagnosticMode": "workspace",
+    "python.analysis.fixAll": ["source.unusedImports", "source.convertImportFormat"],
+    "python.analysis.inlayHints.callArgumentNames": "all",
+    "python.analysis.inlayHints.functionReturnTypes": true,
+    "python.analysis.inlayHints.pytestParameters": true,
+    "python.analysis.inlayHints.variableTypes": true,
+    "python.analysis.typeCheckingMode": "strict",
+    
+    "scm.autoReveal": false,
+    "telemetry.telemetryLevel": "off",
+    
+    "terminal.integrated.cursorBlinking": true,
+    "terminal.integrated.cursorStyle": "underline",
+    "terminal.integrated.scrollback": 100000,
+    
+    "window.commandCenter": true,
+    "window.restoreWindows": "one",
+    
+    "workbench.colorTheme": "One Dark Pro Darker",
+    "workbench.iconTheme": "helium-icon-theme",
+    "workbench.list.smoothScrolling": true,
+    "workbench.sideBar.location": "right",
+    "workbench.startupEditor": "newUntitledFile"
+
 }
