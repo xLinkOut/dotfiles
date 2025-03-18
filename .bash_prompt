@@ -2,17 +2,24 @@
 
 get_current_git_branch() {
     local branch=$(git symbolic-ref --short HEAD 2>/dev/null)
-
+    
     if [ -n "$branch" ]; then
+        local prompt=" ("
+        
         local status=$(git status --porcelain 2>/dev/null)
-
         if [ -n "$status" ]; then
-            # dark-yellow
-            echo -e " (\033[0;33m$branch\033[0m*)"
+            prompt+="\033[0;33m$branch\033[0m*"  # Yellow
         else
-            # green
-            echo -e " (\033[0;32m$branch\033[0m)"
+            prompt+="\033[0;32m$branch\033[0m"  # Green
         fi
+
+        local ahead=$(git rev-list --count @{u}.. 2>/dev/null)
+        local behind=$(git rev-list --count ..@{u} 2>/dev/null)
+        [ "$ahead" -gt 0 ] && prompt+=" ↑$ahead"
+        [ "$behind" -gt 0 ] && prompt+=" ↓$behind"
+        
+        prompt+=")"
+        echo -e "$prompt"
     fi
 }
 
@@ -21,7 +28,7 @@ get_current_git_branch() {
 # \[\e[m\]: reset
 # \[\e[0;95m\]: purple
 # \W: current directory
-# \$(get_current_git_branch):
+# \$(get_current_git_branch): git branch name (if any)
 PS1="\[\e[0;93m\]\u\[\e[m\] \[\e[0;95m\]\W\[\e[m\]\$(get_current_git_branch) > "
 
 export PS1
