@@ -4,10 +4,12 @@
 alias ..="cd .."
 alias c="clear"
 alias ll="ls -lash"
+alias rrm="rm -r"
 
 # SYSTEM
 alias untar="tar -zxvf"
 alias dirsize="du -cha --max-depth=1 . | grep -E 'M|G'"
+alias dircur="du -sh {*/,.*} 2>/dev/null | sort -h"
 
 # GIT
 alias gs="git status"
