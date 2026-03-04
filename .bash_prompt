@@ -15,8 +15,8 @@ get_current_git_branch() {
 
         local ahead=$(git rev-list --count @{u}.. 2>/dev/null)
         local behind=$(git rev-list --count ..@{u} 2>/dev/null)
-        [ "${ahead:-0}" -gt 0 ] && prompt+=" $ahead↑"
-        [ "${behind:-0}" -gt 0 ] && prompt+=" $behind↓"
+        [ "${ahead:-0}" -gt 0 ] && prompt+=" $ahead+"
+        [ "${behind:-0}" -gt 0 ] && prompt+=" $behind-"
         
         prompt+=")"
         echo -e "$prompt"
